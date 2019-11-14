@@ -1,0 +1,13 @@
+class linkedlist:
+    def __init__(self,val):
+        self.val=val
+        self.next = None
+        
+mylist1 = linkedlist(1)
+mylist2 = linkedlist(2)
+mylist3 = linkedlist(3)
+
+mylist1.next = mylist2
+mylist2.next = mylist3
+
+print(mylist1.next.next.val)
